@@ -9,11 +9,11 @@ public class Calculator {
         int ans =0;
         while (true){
             //take the operator as input
-            System.out.println("Enter the Operator");
+            System.out.print("Enter the Operator:");
             char op = in.next().trim().charAt(0);
             if (op == '+'|| op=='-'||op=='*'|| op=='/'|| op=='%'){
                 //input two number
-                System.out.print("Enter the two number");
+                System.out.print("Enter the two number:");
                 int num1 = in.nextInt();
                 int num2 = in.nextInt();
 

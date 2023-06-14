@@ -1,10 +1,13 @@
 package LinearSearchAlgorithm;
 
+import java.util.Arrays;
+
 public class SearchInString {
     public static void main(String[] args) {
         String name = "SaySomething";
         char target = 'i';
         System.out.println(SearchInStrings(name, target));
+        System.out.println(Arrays.toString(name.toCharArray()));
 
     }
 
@@ -13,9 +16,9 @@ public class SearchInString {
            return false;
        }
 
-        for (int i = 0; i <str.length() ; i++) {
-            if (target == str.trim().charAt(i)){
-                return true;
+        for (char ch: str.toCharArray()) {
+            if (ch == target){
+                return  true;
             }
         }
         return  false;

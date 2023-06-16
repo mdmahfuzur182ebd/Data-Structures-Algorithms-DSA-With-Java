@@ -1,21 +1,10 @@
-package Conditionals;
+package ProblemSolved;
 
-//given a number and reverse n =23597 --79532
-public class ReverseNumber {
+public class Palindrome {
     public static void main(String[] args) {
-        System.out.println(ReversNumber(4532));
-
+        System.out.println(isPalindrome(252));
     }
 
-     static int ReversNumber(int num){
-         int ans = 0;
-        while (num > 0) {
-            int rem = num % 10;
-            num /= 10;
-            ans = ans * 10 + rem;
-         }
-        return ans;
-     }
 
     static boolean isPalindrome(int x) {
         int num = x;
@@ -33,4 +22,3 @@ public class ReverseNumber {
         }
     }
 }
-
